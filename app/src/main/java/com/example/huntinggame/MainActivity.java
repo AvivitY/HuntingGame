@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,StartActivity.class);
                 intent.putExtra("score",score);
                 startActivity(intent);
+                finish();
             }
         }
     }

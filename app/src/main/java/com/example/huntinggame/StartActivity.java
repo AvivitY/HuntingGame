@@ -30,8 +30,6 @@ public class StartActivity extends AppCompatActivity {
                 score= extras.getInt("score");
                 start_LBL_title.setText("Game Over!");
             }
-        } else {
-            Log.d("ccc","d");
         }
         start_LBL_score.setText(String.valueOf(score));
     }
@@ -39,5 +37,6 @@ public class StartActivity extends AppCompatActivity {
     private void startGame() {
         Intent game = new Intent(StartActivity.this,MainActivity.class);
         startActivity(game);
+        finish();
     }
 }
